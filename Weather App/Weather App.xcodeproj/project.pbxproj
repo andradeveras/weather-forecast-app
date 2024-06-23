@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C85F6B412C279C140037135F /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85F6B402C279C140037135F /* HourlyForecastCollectionViewCell.swift */; };
 		C87267F02C1F6DB9008FB4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87267EF2C1F6DB9008FB4D4 /* AppDelegate.swift */; };
 		C87267F22C1F6DB9008FB4D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87267F12C1F6DB9008FB4D4 /* SceneDelegate.swift */; };
 		C87267F42C1F6DB9008FB4D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87267F32C1F6DB9008FB4D4 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C85F6B402C279C140037135F /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
 		C87267EC2C1F6DB9008FB4D4 /* Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87267EF2C1F6DB9008FB4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C87267F12C1F6DB9008FB4D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				C87267EF2C1F6DB9008FB4D4 /* AppDelegate.swift */,
 				C87267F12C1F6DB9008FB4D4 /* SceneDelegate.swift */,
 				C87267F32C1F6DB9008FB4D4 /* ViewController.swift */,
+				C85F6B402C279C140037135F /* HourlyForecastCollectionViewCell.swift */,
 				C87267F82C1F6DBA008FB4D4 /* Assets.xcassets */,
 				C87267FA2C1F6DBA008FB4D4 /* LaunchScreen.storyboard */,
 				C87267FD2C1F6DBA008FB4D4 /* Info.plist */,
@@ -256,6 +259,7 @@
 			files = (
 				C87267F42C1F6DB9008FB4D4 /* ViewController.swift in Sources */,
 				C87267F02C1F6DB9008FB4D4 /* AppDelegate.swift in Sources */,
+				C85F6B412C279C140037135F /* HourlyForecastCollectionViewCell.swift in Sources */,
 				C87267F22C1F6DB9008FB4D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
