@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 20) //Define o tamanho da label
         label.text = "São Paulo"
         label.textAlignment = .center
-        label.textColor = UIColor(named: "primaryColor")
+        label.textColor = UIColor.primaryColor
         return label
     }()
     
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 70, weight: .bold) //Define o tamanho da label
         label.text = "25°C"
         label.textAlignment = .left
-        label.textColor = UIColor(named: "primaryColor")
+        label.textColor = UIColor.primaryColor
         return label
     }()
     
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Umidade"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "contrastColor")
+        label.textColor = UIColor.contrastColor
         return label
     }()
     
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "1000mm"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "contrastColor")
+        label.textColor = UIColor.contrastColor
         return label
     }()
     
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Vento"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "contrastColor")
+        label.textColor = UIColor.contrastColor
         return label
     }()
     
@@ -94,7 +94,7 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "10km/h"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "contrastColor")
+        label.textColor = UIColor.contrastColor
         return label
     }()
     
@@ -111,7 +111,7 @@ class ViewController: UIViewController {
         stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.spacing = 3
-        stackView.backgroundColor = UIColor(named: "softGray")
+        stackView.backgroundColor = UIColor.soft
         stackView.layer.cornerRadius = 10
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 12,
@@ -124,7 +124,7 @@ class ViewController: UIViewController {
     private lazy var hourlyForecastLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor(named: "contrastColor")
+        label.textColor = UIColor.contrastColor
         label.text = "PREVISÃO POR HORA"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
         label.textAlignment = .center
@@ -139,7 +139,7 @@ class ViewController: UIViewController {
         layout.sectionInset = UIEdgeInsets(top: .zero, left: 12, bottom: .zero, right: 12)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout )
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = .red
+        collectionView.backgroundColor = .clear
         collectionView.dataSource = self
         collectionView.register(HourlyForecastCollectionViewCell.self, forCellWithReuseIdentifier: HourlyForecastCollectionViewCell.indentifier)
         return collectionView
