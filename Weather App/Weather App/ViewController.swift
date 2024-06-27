@@ -166,11 +166,17 @@ class ViewController: UIViewController {
         return tableView
     }()
     
+    private let service = Service()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         setupView()
+        
+        service.fecthData(city: City(lat:  "-23.6814346", lon: "-46.9249599", name: "São Paulo")) { message in
+             print(message)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
